@@ -4,19 +4,24 @@
     overflow-x: hidden;
     padding: 8rem;
 }
-
-.chats::-webkit-scrollbar-thumb {
-    background: #323232;
-    border-radius: 10px;
+.chats::-webkit-scrollbar {
+    width: 8px;
 }
 
+/* Remove white track background */
 .chats::-webkit-scrollbar-track {
-    background-color: #212121;
     background: transparent;
 }
 
+/* Black scrollbar thumb */
+.chats::-webkit-scrollbar-thumb {
+    background: #000;
+    border-radius: 10px;
+}
+
+/* Thumb on hover */
 .chats::-webkit-scrollbar-thumb:hover {
-    background: #888;
+    background: #333;
 }
 
 .userDiv{
@@ -39,6 +44,10 @@
     width: fit-content;
 }
 
-/* .gptMsg{
+.hljs {
+    border-radius: 14px;
+}
 
-} */
+pre{
+    white-space: pre-wrap;
+}
